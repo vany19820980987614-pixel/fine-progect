@@ -1,11 +1,80 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum veritatis fugiat perferendis temporibus blanditiis est quae, corporis explicabo, accusamus error nostrum hic ad, id natus. Beatae dolorum repellat tempore voluptates.</p>
-</body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <a class="header__logo" href="">RaftMe</a>
+      <div class="mobile-deckrop">
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item">
+              <a class="header__item_link" href="">Главная</a>
+            </li>
+            <li class="header__item">
+              <a class="header__item__link" href="">Тиры</a>
+            </li>
+            <li class="header__item">
+              <a class="header__item__link" href="">Моды</a>
+            </li>
+            <li class="header__item">
+              <a class="header__item__link" href="">Донат</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <img src="./img/Vector.png" class="open-btn">
+      <div class="mobile-menu">
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item">
+              <a class="header__item_link" href="">Головна</a>
+            </li>
+            <li class="header__item">
+              <a class="header__item__link" href="">Меню</a>
+            </li>
+            <li class="header__item">
+              <a class="header__item__link" href="">Галерея</a>
+            </li>
+            <li class="header__item">
+              <a class="header__item__link" href="">Бронювання</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <h1 class="hero__title">Відчуй смак справжньої кави</h1>
+        <h2 class="hero__subtitle">Затишок. натхнення та бездоганний сервіс</h2>
+        <button class="hero__btn">Забронювати столик</button>
+      </section>
+
+      <section class="about-us">
+        <h2 class="about-us__title">Про нас</h2>
+        <p class="about-us__text">
+          Ми створюємо не просто каву, а настрій.Завітайте до нас, щоб зупинити
+          час.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <p class="footer__text">2026 Arome Coffee.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
 </html>

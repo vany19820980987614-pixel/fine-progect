@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+        integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <header>
+        <a class="header__logo" href="">RaftMe</a>
+        <nav class="header__nav">
+            <ul class="header__list">
+                <li class="header__item">
+                    <a class="header__item_link" href="">Главная</a>
+                </li>
+                <li class="header__item">
+                    <a class="header__item__link" href="">Тиры</a>
+                </li>
+                <li class="header__item">
+                    <a class="header__item__link" href="">Моды</a>
+                </li>
+                <li class="header__item">
+                    <a class="header__item__link" href="">Донат</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="form-section">
+            <form class="form" action="">
+                <h2 class="form__title"></h2>
+                <p class="form__text"></p>
+                <label class="form__lable" for="">
+                    Ваше повне ім'я
+                    <input class="form__input" type="text">
+                </label>
+                <label class="form__lable" for="">
+                    Дата бронювання
+                    <input class="form__input" type="date">
+                </label>
+                <label class="form__lable" for="">
+                    Бажаний час
+                    <input class="form__input" type="time">
+                </label>
+                <label class="form__lable" id="number-guests-title" for="">
+                    Кількість гостей
+                    <div class="form__lable__div">
+                        <button class="form__lable__div__btn" type="button">+</button>
+                        <input class="form__input" type="number">
+                        <button class="form__lable__div__btn" type="button">-</button>
+                    </div>
+                </label>
+                <label class="form__lable" for="">
+                    <input class="form__input" type="checkbox" required>
+                    Я згоден з правилами та умовами бронювання
+                </label>
+                <button>✓ Підтвердити бронювання</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p class="footer__text">2026 Arome Coffee.</p>
+    </footer>
+</body>
+
+</html>
