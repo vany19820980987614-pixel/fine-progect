@@ -1,80 +1,244 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+
+    <title>RaftMe Donate</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
         integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
-    <header>
-        <button class="header__logo" style="--content: 'RaftMe';" href="dad">
-  <div class="left"></div>
-    RaftMe
-  <div class="right"></div>
-</button>
+
+    <!-- HEADER -->
+<header>
+      <a class="header__logo" href="">RaftMe</a>
+      <div class="mobile-deckrop">
         <nav class="header__nav">
-            <ul class="header__list">
-                <li class="header__item">
-                    <a class="header__item_link" href="">Главная</a>
-                </li>
-                <li class="header__item">
-                    <a class="header__item__link" href="">Тиры</a>
-                </li>
-                <li class="header__item">
-                    <a class="header__item__link" href="">Моды</a>
-                </li>
-                <li class="header__item">
-                    <a class="header__item__link" href="">Донат</a>
-                </li>
-            </ul>
+          <ul class="header__list">
+            <li class="header__item">
+              <a class="header__item_link" href="./index.html">Главная</a>
+            </li>
+            <li class="header__item">
+              <a class="header__item__link" href="">Тиры</a>
+            </li>
+            <li class="header__item">
+              <a class="header__item__link" href="">Моды</a>
+            </li>
+            <li class="header__item">
+              <a class="header__item__link" href="./form.html">Донат</a>
+            </li>
+          </ul>
         </nav>
+      </div>
+
+      <img src="./img/Vector.png" class="open-btn">
+      <div class="mobile-menu">
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item">
+              <a class="header__item_link" href="">Головна</a>
+            </li>
+            <li class="header__item">
+              <a class="header__item__link" href="">Меню</a>
+            </li>
+            <li class="header__item">
+              <a class="header__item__link" href="">Галерея</a>
+            </li>
+            <li class="header__item">
+              <a class="header__item__link" href="">Бронювання</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <main>
-        <section class="form-section">
-            <form class="form" action="">
-                <h2 class="form__title"></h2>
-                <p class="form__text"></p>
-                <label class="form__lable" for="">
-                    Ваше повне ім'я
-                    <input class="form__input" type="text">
-                </label>
-                <label class="form__lable" for="">
-                    Дата бронювання
-                    <input class="form__input" type="date">
-                </label>
-                <label class="form__lable" for="">
-                    Бажаний час
-                    <input class="form__input" type="time">
-                </label>
-                <label class="form__lable" id="number-guests-title" for="">
-                    Кількість гостей
-                    <div class="form__lable__div">
-                        <button class="form__lable__div__btn" type="button">+</button>
-                        <input class="form__input" type="number">
-                        <button class="form__lable__div__btn" type="button">-</button>
+
+    <!-- MAIN -->
+
+    <main class="main">
+
+        <section class="donate">
+
+            <!-- LEFT PANEL -->
+
+            <div class="donate__left">
+
+                <h2 class="donate__title">
+                    Выберите товар:
+                </h2>
+
+                <div class="donate__list">
+
+                    <div class="donate__item active">
+
+                        <div class="donate__item-left">
+                            <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/e/e6/Diamond_Chestplate_JE2_BE2.png">
+                            <span>Пират</span>
+                        </div>
+
+                        <p>от 0.16 EUR</p>
+
                     </div>
-                </label>
-                <label class="form__lable" for="">
-                    <input class="form__input" type="checkbox" required>
-                    Я згоден з правилами та умовами бронювання
-                </label>
-                <button>✓ Підтвердити бронювання</button>
-            </form>
+
+                    <div class="donate__item">
+
+                        <div class="donate__item-left">
+                            <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/9/97/Golden_Chestplate_JE4_BE2.png">
+                            <span>Страж</span>
+                        </div>
+
+                        <p>от 0.29 EUR</p>
+
+                    </div>
+
+                    <div class="donate__item">
+
+                        <div class="donate__item-left">
+                            <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/0/03/Netherite_Chestplate_JE2_BE1.png">
+                            <span>Герой</span>
+                        </div>
+
+                        <p>от 0.43 EUR</p>
+
+                    </div>
+
+                    <div class="donate__item">
+
+                        <div class="donate__item-left">
+                            <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/7/72/Diamond_Chestplate_JE3_BE3.png">
+                            <span>Аспид</span>
+                        </div>
+
+                        <p>от 0.89 EUR</p>
+
+                    </div>
+
+                    <div class="donate__item">
+
+                        <div class="donate__item-left">
+                            <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/8/8f/Leather_Chestplate_JE4_BE2.png">
+                            <span>Сквид</span>
+                        </div>
+
+                        <p>от 1.49 EUR</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- RIGHT PANEL -->
+
+            <div class="donate__right">
+
+                <div class="donate__tabs">
+
+                    <button class="donate__tab">
+                        30 дней
+                    </button>
+
+                    <button class="donate__tab active">
+                        90 дней
+                    </button>
+
+                    <button class="donate__tab">
+                        Навсегда
+                    </button>
+
+                </div>
+
+                <div class="donate__content">
+
+                    <h3>
+                        Возможности привилегии:
+                    </h3>
+
+                    <ul>
+
+                        <li>
+                            <span>$</span>
+                            Префикс в чате и табе: [Барон] ВашНик
+                        </li>
+
+                        <li>
+                            <span>/kit Барон</span>
+                            ⇨ Получить набор Барона
+                        </li>
+
+                        <li>
+                            <span>/salary</span>
+                            ⇨ Получить зарплату
+                        </li>
+
+                        <li>
+                            <span>/crawl</span>
+                            ⇨ Сменить позу: красться
+                        </li>
+
+                    </ul>
+
+                    <h3>
+                        Прочее:
+                    </h3>
+
+                    <div class="donate__info">
+
+                        <p>
+                            Доступно точек домов:
+                            <span>2</span>
+                        </p>
+
+                        <p>
+                            Регионов:
+                            <span>3 блоков</span>
+                        </p>
+
+                        <p>
+                            Слотов на Аукционе:
+                            <span>6</span>
+                        </p>
+
+                        <p>
+                            Задержка телепорта:
+                            <span>7 сек</span>
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
         </section>
+
     </main>
-    <footer>
-        <p class="footer__text">RaftMe 1.21.</p>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <p class="footer__text">
+            RaftMe 1.21
+        </p>
+
     </footer>
+
 </body>
 
 </html>
