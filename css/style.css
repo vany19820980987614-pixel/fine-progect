@@ -11,8 +11,9 @@ header{
     background-color: var(--primary);
     color: var(--accent);
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    padding: 20px 15px;
+    padding: 10px 15px;
 }
 
 
@@ -38,8 +39,8 @@ header{
     --shadow-color: hsla(210, 100%, 35%, 0.557);
     --btn-color: hsl(210, 80%, 42%);
     --bg-color: #00b3c3;
-    color: #00b5d1;
-    background: #8baaad;
+    color: #000000;
+    background: #00eaff;
     color: white;
   padding: 5px 10px;
   border-radius: 4px;
@@ -81,7 +82,7 @@ header{
 
 
 .hero {
-    background-image: url(/img/background.jpg);
+    background-image: url(/img/17490609904625.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -828,4 +829,26 @@ body{
         font-size: 28px;
     }
 
+}
+.hero__btn {
+    background: linear-gradient(135deg, #4fc3f7, #29b6f6);
+    color: #fff;
+    border: none;
+    padding: 14px 32px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 6px 20px rgba(41, 182, 246, 0.35);
+    transition: all 0.3s ease;
+}
+
+.hero__btn:hover {
+    background: linear-gradient(135deg, #29b6f6, #03a9f4);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(41, 182, 246, 0.5);
+}
+
+.hero__btn:active {
+    transform: translateY(0);
 }
